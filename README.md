@@ -41,7 +41,7 @@ Optical fibers are cylindrical waveguides characterized by:
 
 The V-number determines how many modes can propagate:
 
-$$V = (\pi\times a/\lambda)\times \sqrt{(n_1^2 - n_2^2)}$$
+$$V = (\pi a/\lambda)\times \sqrt{(n_1^2 - n_2^2)}$$
 
 
 **Key thresholds:**
@@ -67,3 +67,62 @@ where p_mn is the m-th zero of the Bessel function derivative.
 #### Modal Dispersion
 
 Different modes travel at different velocities, causing signal broadening:
+
+$$\Delta\tau = \frac{Ln_1}{2c}\times\frac{\Delta n_g}{n_1}$$
+
+
+### Implementation Approach
+
+This project uses the **weakly guiding approximation** and **JWKB method** for mode calculation, solving the characteristic equation numerically.
+
+## Features
+
+- ✅ Calculate V-number and modal cutoff wavelengths
+- ✅ Determine single-mode range for custom fiber parameters
+- ✅ Visualize modal field patterns (intensity distributions)
+- ✅ Generate dispersion curves
+- ✅ Export results to CSV and plots to PNG/PDF
+- ✅ Interactive CLI for custom fiber specifications
+- ✅ Pre-defined fiber models (SMF-28, MMF, etc.)
+
+## Installation
+
+### Prerequisites
+
+- Python 3.8+
+- pip (Python package manager)
+
+### Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/treddelWhat/fiber-optic-mode-calculator.git
+   cd fiber-optic-mode-calculator
+   ```
+2. **Create a virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Dependencies
+- numpy: Numerical computations
+- scipy: Bessel functions and optimization
+- matplotlib: Visualization
+- pandas: Data handling and export
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## References
+### Textbooks
+- Agrawal, G. P. (2012). _Fiber-Optic Communication Systems_ (4th ed.). Wiley.
+- Saleh, B. E. A., & Teich, M. C. (2007). _Fundamentals of Photonics_ (2nd ed.). Wiley-Interscience
+- Snyder, A. W., & Love, J. D. (2012). _Optical Waveguide Theory_. Springer Science.
+
+### Academic Papers
+- Snyder, A. W. (1969). "Asymptotic expression for eigenfunctions of a waveguide." _IEEE Transactions on Microwave Theory and Techniques_.
