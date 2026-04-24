@@ -72,13 +72,13 @@ This project uses the **weakly guiding approximation** and **JWKB method** for m
 
 ## Features
 
-- ✅ Calculate V-number and modal cutoff wavelengths
-- ✅ Determine single-mode range for custom fiber parameters
-- ✅ Visualize modal field patterns (intensity distributions)
-- ✅ Generate dispersion curves
-- ✅ Export results to CSV and plots to PNG/PDF
-- ✅ Interactive CLI for custom fiber specifications
-- ✅ Pre-defined fiber models (SMF-28, MMF, etc.)
+-  Calculate V-number and modal cutoff wavelengths
+-  Determine single-mode range for custom fiber parameters
+-  Visualize modal field patterns (intensity distributions)
+-  Generate dispersion curves
+-  Export results to CSV and plots to PNG/PDF
+-  Interactive CLI for custom fiber specifications
+-  Pre-defined fiber models (SMF-28, MMF, etc.)
 
 ## Installation
 
