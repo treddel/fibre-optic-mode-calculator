@@ -9,8 +9,6 @@ A Python-based tool for calculating and visualizing the propagation modes in opt
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Examples](#examples)
-- [Contributing](#contributing)
 - [License](#license)
 - [References](#references)
 
@@ -23,9 +21,6 @@ Optical fibers guide light through a process of total internal reflection. Depen
 - Visualize modal field patterns
 - Analyze dispersion characteristics
 - Compute wavelength cutoff values
-
-### Target Application
-This project is designed for students and engineers learning photonics, particularly those pursuing advanced courses like the EPSRC CDT in Photonics and Electronic Systems.
 
 ## Theory
 
@@ -114,6 +109,9 @@ This project uses the **weakly guiding approximation** and **JWKB method** for m
 - scipy: Bessel functions and optimization
 - matplotlib: Visualization
 - pandas: Data handling and export
+
+## Usage
+To be added! 
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
